@@ -27,7 +27,7 @@ section {
     margin: 0 auto;
 }
 
-.logo {
+.logo {    
     text-align: center;
     font-size: 80px;
     color: blanchedalmond;
@@ -42,15 +42,21 @@ input[type=text] {
     margin: 2px;
 }
 
-.container .search-result {
-    margin-top: 50px;       
+.search-result {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
 }
+
 
 .search-result .product {
     border-radius: 8px;
     background-color: #510000;
     padding: 15px;
     overflow: hidden;
+    margin: 5px;
 }
 
 .search-result img {
@@ -58,9 +64,47 @@ input[type=text] {
     border-radius: 4px;
 }
 
-.product .flex-container {
-    display: flex;
+.product .flex-container {    
     align-items: center;
     justify-content: space-between;
 }
 
+.product .title {
+    color: blanchedalmond;    
+    margin: 20px 10px 0 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.view-btn {
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    padding: 10px 0;
+    background-color: #8e0000;
+    color: blanchedalmond;
+    font-size: 12px;
+    margin: 5px;
+    align-self: flex-start;
+}
+
+.save-btn {
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    padding: 10px 0;
+    background-color: #8e0000;
+    color: blanchedalmond;
+    font-size: 12px;
+    margin: 5px;
+    align-self: flex-start;
+}
+
+.product-info {
+    color: blanchedalmond;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
